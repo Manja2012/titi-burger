@@ -182,21 +182,43 @@ article{
     padding: 4px;
 }
 .cta{
+    background: #D9D9D9;
     width: 100%;
     display: flex;  
     justify-content: space-around;
-    border: 2px solid black;  
+    padding: 40px;
+    
 }
 .cta_title{
     width: 30%;
     height: 100px;
-    background-color: rgb(104, 43, 226); 
+    
 } 
 .cta_form{
-    width: 30%;
+    text-align: center;
+    width: 50%;
     height: 100px;
-    background-color: rgb(104, 43, 226); 
+   
 }
+.cta_form_label{
+    margin-right: 56px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-weight: 400;
+    font-family: 'Langar', cursive;
+}
+.cta_form_input{
+   width: 40%;
+   height: 40px;
+
+}
+
+
+
 .footer{
     width: 100%;
     display: flex;  
