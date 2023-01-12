@@ -1,0 +1,210 @@
+main{
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 15px;
+}
+
+header{
+    height: 80vh;
+    justify-content: space-between;
+    background: url(../img/clem-onojeghuo-175917.jpg) no-repeat;
+    background-size: cover;
+    background-position: top ;
+}
+li{
+    list-style: none;   
+}
+.flex{
+   display: flex; 
+   flex-wrap: wrap;
+}
+.logo img{
+    width: 40%;
+}
+.logo{
+    padding-top: 34px ;
+    padding-left: 28px;
+    width: 400px;
+    
+}
+
+.button{
+    text-align: right;
+    padding: 30px;
+    
+}
+.callToAction{
+ background-color: #5F6368;
+    filter: brightness(60%);
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Langar', cursive;
+}
+.navigation{
+    width: 40%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Langar', cursive;
+
+}
+nav a:hover{
+color: darkgray;
+}
+
+nav{
+    margin-top: 20px; 
+}
+section{
+    margin: 50px auto;
+}
+.titiStory{
+
+    display: flex;  
+    justify-content: space-between;
+    margin: 50px auto;
+  
+}
+.titiStory_resto_title{
+    margin-bottom: 38px;
+}
+.titiStory_story_title{
+    margin-bottom: 16px;
+}
+h2{
+    color: black;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Langar', cursive;
+    margin: 0;
+       
+}
+h3{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+    font-family: 'Langar', cursive;
+}
+p{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-weight: 400;
+    font-family: 'Langar', cursive;
+}
+.titiStory_story_text{
+    
+    width: 70%;
+}
+
+.titiStory_story_description{
+    margin-bottom: 64px;
+}
+.titiStory_resto{
+    margin-right:122px;
+    /* width: 40%; */
+}
+.titiStory_image{
+   width: 450px;
+   height: 315px;
+   margin-top: 38px;
+    
+}
+.myBurgers{
+    margin: 76px auto;
+    display: flex;  
+    justify-content: space-around;
+    
+}
+.myBurgers_burgers_text{
+    width: 80%;
+}
+.myBurgers_photos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.myBurgers_photos_img{
+    width: 200px;
+    height: 190px;
+    margin-right: 20px;
+}
+
+.actus{
+    text-align: center;
+}  
+article{
+    width: 380px;
+}
+.actus_articles{
+    display: flex;
+    justify-content: space-between;
+}
+.actus_articles_img{
+    width: 380px;
+    height: 350px;
+    margin-top: 24px;
+}
+.actus_articles_link{
+    text-decoration: none;
+    background-color: #5F6368;
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+  
+    font-family: 'Langar', cursive;
+    padding: 4px;
+}
+.cta{
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    border: 2px solid black;  
+}
+.cta_title{
+    width: 30%;
+    height: 100px;
+    background-color: rgb(104, 43, 226); 
+} 
+.cta_form{
+    width: 30%;
+    height: 100px;
+    background-color: rgb(104, 43, 226); 
+}
+.footer{
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    border: 2px solid black;  
+}
+.footer_list{
+    width: 15%;
+    height: 100px;
+    background-color: rgb(104, 43, 226); 
+}
