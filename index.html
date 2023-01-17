@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,21 @@
     <meta name="description" content="Bienvenue sur notre site officiel. 
     Découvrez notre carte, notre aventure et trouvez votre restaurant 
     Titi Burger. Vous trouverez ici les meilleurs burgers">
-    <link rel="stylesheet" href="asset/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Langar&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="asset/CSS/style.css">
+    
 </head>
 <body>
     <header class="flex">
         <div class="logo">
-            <img src="asset/img/logo burger dark.svg" alt="logo Titi Burger">
+            <a href="./index.html">
+                <img src="./asset/img/logo burger dark.svg" alt="logo burger">
+            </a>
         </div>
         <div class="navigation">
             <div class="button">
-                <a class="callToAction" href="">Click & Collect</a>
+                <a class="callToAction" href="./ClicAndCollect.html">Click & Collect</a>
                 <a class="callToAction" href="">Livraison</a>
             </div>
             <nav>
@@ -72,33 +76,35 @@
                 <article>
                     <h3>Article 1</h3>
                     <img class="actus_articles_img" src="asset/img/burger_black.jpg" alt="burger noir">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
+                    <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
                 <article>
                     <h3>Article 2</h3>
                     <img class="actus_articles_img" src="asset/img/chinh-le-duc-276670.jpg" alt="boisson aux de litchi">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
+                    <p class="actus_articles_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
                 <article>
                     <h3>Article 3</h3>
                     <img class="actus_articles_img" src="asset/img/open.jpg" alt="open">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
+                    <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
             </div>
         </section>
         <section class="cta">
-            <div class="cta_title">
-                <p class="cta_title_text">Des Offres et des actus <br>
-                 Chaque semaine sur titi Burger</p>
+            <div class="cta__background">
+                <div class="cta_title">
+                    <p class="cta_title_text">Des Offres et des actus <br>
+                    Chaque semaine sur titi Burger</p>
+                </div>
+                <div class="cta_form">
+                    <p class="cta_title_text">Inscription à Newsletter</p>
+                    <label class="cta_form_label" for="inscription">c’est par ici </label>
+                    <input class="cta_form_input" type="text" id="inscription">
+                </div> 
             </div>
-            <div class="cta_form">
-                <p>Inscription à Newsletter</p>
-                <label class="cta_form_label" for="inscription">c’est par ici </label>
-                <input class="cta_form_input" type="text" id="inscription">
-           </div>
         </section>
     </main>
     <footer>
@@ -119,8 +125,9 @@
                     <li>Actus</li>
                 </ul>
             </div>
-            <div class="footer_list">
-               <span>Où nous trouver ?</span> 
+            <div class="footer_list footer_flex">
+               <span class="footer_list__text">Où nous trouver ?</span> 
+               <img class="footer_list__image" src="./asset/img/Rectangle.jpg" alt=" carte">
             </div>
             <div class="footer_list">
                 <ul>
@@ -129,31 +136,32 @@
                     <li>FAQ</li>
                 </ul>
             </div>
-            
             <div class="footer_list">
                 <ul class="social">
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="20" height="20" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-Instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg width="20" height="20" class="social__icon">
-                                <use href="">
+                            <svg width="48" height="48" class="social__icon">
+                                <use href="./asset/img/icons.svg#icon-facebook">
                                 </use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="20" height="20" class="social__icon">
+                            <svg width="48" height="48" class="social__icon">
+                                <use href="./asset/img/icons.svg#icon-instagram">
+                                </use>
                             </svg>
                         </a>
-                    </li> -->
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg width="48" height="48" class="social__icon">
+                                <use href="./asset/img/icons.svg#icon-tiktok">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>

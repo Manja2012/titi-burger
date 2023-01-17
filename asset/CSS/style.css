@@ -1,10 +1,30 @@
-main{
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 15px;
+:root {
+    --text-color: #000000;
+    --text-contacts-color: #FFFFFF;
+    --accent-color: #D9ADD6;
+    /* --contact-button-color: #5980F3; */
+    --background-color: #D9D9D9;
+    --background-footer-color: #3C4043;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    padding: 0;
+    margin: 0;
 }
 
 header{
+    padding-top: 30px;
     height: 80vh;
     justify-content: space-between;
     background: url(../img/clem-onojeghuo-175917.jpg) no-repeat;
@@ -14,6 +34,11 @@ header{
 li{
     list-style: none;   
 }
+.container{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .flex{
    display: flex; 
    flex-wrap: wrap;
@@ -22,22 +47,21 @@ li{
     width: 40%;
 }
 .logo{
-    padding-top: 34px ;
+    
     padding-left: 28px;
     width: 400px;
-    
 }
-
 .button{
     text-align: right;
-    padding: 30px;
+    padding-right: 28px;
     
 }
 .callToAction{
- background-color: #5F6368;
+    padding: 10px;
+    background-color: var(--accent-color);
     filter: brightness(60%);
     margin-left: 16px;
-    color: white;
+    color: var(--text-contacts-color);
     text-decoration: none;
     font-size: 20px;
     line-height: 28px; 
@@ -55,14 +79,13 @@ nav ul{
 
 }
 nav a{
-    color: white;
+    color: var(--text-contacts-color);
     text-decoration: none;
     font-size: 20px;
     line-height: 28px; 
     font-weight: bold;
     transition: 0.5s;
     font-family: 'Langar', cursive;
-
 }
 nav a:hover{
 color: darkgray;
@@ -72,7 +95,9 @@ nav{
     margin-top: 20px; 
 }
 section{
-    margin: 50px auto;
+    margin: 0px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .titiStory{
 
@@ -87,17 +112,27 @@ section{
 .titiStory_story_title{
     margin-bottom: 16px;
 }
+h1{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 68px;
+    font-weight: bold;
+    font-family: 'Langar', cursive;
+  
+         
+}
 h2{
-    color: black;
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 48px;
     font-weight: bold;
     font-family: 'Langar', cursive;
-    margin: 0;
+    margin-bottom: 22px;
+ 
        
 }
 h3{
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 400;
     font-size: 24px;
@@ -106,7 +141,7 @@ h3{
     font-family: 'Langar', cursive;
 }
 p{
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -155,6 +190,7 @@ p{
 
 .actus{
     text-align: center;
+    
 }  
 article{
     width: 380px;
@@ -169,10 +205,11 @@ article{
     margin-top: 24px;
 }
 .actus_articles_link{
+    margin-top: 12px;
     text-decoration: none;
     background-color: #5F6368;
     margin-left: 16px;
-    color: white;
+    color: var(--text-contacts-color);
     text-decoration: none;
     font-size: 20px;
     line-height: 28px; 
@@ -181,20 +218,31 @@ article{
     font-family: 'Langar', cursive;
     padding: 4px;
 }
+.actus_articles_text{
+    margin-top: 20px;
+    margin-bottom:40px ;
+}
 .cta{
     background: #D9D9D9;
 
-    display: flex;  
-    justify-content: space-between;
-   
     padding: 40px;
     
 }
-
+.cta__background{
+    background-color: var(--background-footer-color);
+    display: flex;  
+    justify-content: space-between;
+    padding: 30px;
+  
+}
+.cta_title_text{
+    color:var(--text-contacts-color);
+    margin: 0;
+}
 .cta_form{
     text-align: center;
     width: 50%;
-   
+
    
 }
 .cta_title{
@@ -202,13 +250,10 @@ article{
     text-align: center;
     
 }
-.cta_title_text{
-    margin-left: 70px;
-    margin-top: 30px;
-}
+
 .cta_form_label{
     margin-right: 56px;
-    color: black;
+    color:var(--text-contacts-color);
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -220,7 +265,7 @@ article{
 .cta_form_input{
    width: 60%;
    height: 30px;
-
+   margin-top: 12px;
 }
 .footer{
     background: #3C4043;
@@ -228,10 +273,13 @@ article{
     display: flex;  
     justify-content: space-around;
     padding: 30px;
+    margin: 0 auto;
+    
    
 }
 .footer_list{
-    color: white;
+   
+    color: var(--text-contacts-color);
     text-decoration: none;
     font-size: 20px;
     line-height: 28px; 
@@ -239,10 +287,16 @@ article{
   
     font-family: 'Langar', cursive;
 }
-.social__icon{
-    width: 20px;
-    height: 20px;
-   
+.footer_flex{
+   display: flex;
+   flex-direction: column;
+}
+.footer_list__text{
+    margin-bottom: 12px;
+}
+.footer_list__image{
+    width: 250px;
+    height: 130px;
 }
 .hidden{
     position: absolute;
@@ -256,3 +310,80 @@ article{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.social__icon{
+    fill: var(--text-contacts-color);
+    background-color: var(--background-footer-color)
+}
+/* page 2 */
+.header__clicAndCollect{
+    background: none;
+    height: auto;
+}
+.cta__link{
+   margin: 0 auto;
+}
+.main__clicAndCollect{
+    text-align: center;
+}
+.main__clicAndCollect__caption{
+    color: var(--accent-color);
+}
+.main__clicAndCollect-title{
+    margin-top: 100px;
+    margin-bottom: 21px;
+}
+.main__clicAndCollect-text{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cta__button{
+    width: 456px;
+    height: 89px;
+    margin: 0 auto; 
+    
+    background-color: var(--accent-color);
+    color:var(--text-contacts-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    font-weight: 400;
+    font-family: 'Langar', cursive;
+}
+
+/* page 3 */
+.ourBurgers{
+    display: flex;
+    justify-content:space-between;
+  border-bottom: 2px dashed var(--background-footer-color);
+
+}
+.ourBurgers__description{
+    width: 40%;
+}
+.ourBurgers__clicAndCollect{
+    width: 40%;
+    text-align: center;
+}
+.ourBurgers__clicAndCollect-text{
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+.ourBurgers__clicAndCollect-title{
+    margin-bottom: 5px;
+}
+.burger__img{
+    width: 205px;
+    height: 194px;
+
+}
+.burger__img::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Ellipse.svg);
+  } 
+
