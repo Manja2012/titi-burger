@@ -31,6 +31,12 @@ header{
     background-size: cover;
     background-position: top ;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+ 
 li{
     list-style: none;   
 }
@@ -43,13 +49,21 @@ li{
    display: flex; 
    flex-wrap: wrap;
 }
+
+nav{
+    margin-top: 20px; 
+}
+section{
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .logo img{
     width: 40%;
 }
 .logo{
-    
     padding-left: 28px;
-    width: 400px;
+    width: 25%;
 }
 .button{
     text-align: right;
@@ -59,7 +73,7 @@ li{
 .callToAction{
     padding: 10px;
     background-color: var(--accent-color);
-    filter: brightness(60%);
+
     margin-left: 16px;
     color: var(--text-contacts-color);
     text-decoration: none;
@@ -89,28 +103,6 @@ nav a{
 }
 nav a:hover{
 color: darkgray;
-}
-
-nav{
-    margin-top: 20px; 
-}
-section{
-    margin: 0px auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.titiStory{
-
-    display: flex;  
-    justify-content: space-between;
-    margin: 50px auto;
-  
-}
-.titiStory_resto_title{
-    margin-bottom: 38px;
-}
-.titiStory_story_title{
-    margin-bottom: 16px;
 }
 h1{
     color: var(--text-color);
@@ -150,37 +142,53 @@ p{
     font-weight: 400;
     font-family: 'Langar', cursive;
 }
+/* page 1 */
+
+.titiStory{
+    display: flex;  
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.titiStory_resto{
+   
+    width: 50%;
+}
+.titiStory_story{
+    width: 50%;
+}
+.titiStory_resto_title{
+    margin-bottom: 38px;
+}
+.titiStory_story_title{
+    margin-bottom: 16px;
+}
 .titiStory_story_text{
-    
     width: 70%;
 }
-
 .titiStory_story_description{
     margin-bottom: 64px;
 }
-.titiStory_resto{
-    margin-right:122px;
-    /* width: 40%; */
-}
 .titiStory_image{
-   width: 450px;
-   height: 315px;
-   margin-top: 38px;
-    
+   width: 70%;
 }
+
 .myBurgers{
-    margin: 76px auto;
+    margin: 0 auto;
     display: flex;  
     justify-content: space-around;
-    
+}
+.myBurgers_burgers{
+    width:50%; 
 }
 .myBurgers_burgers_text{
-    width: 80%;
+    width: 70%;
 }
 .myBurgers_photos{
+    width:50%;
     display: flex;
     justify-content: space-around;
-    margin-top: 70px;
+   
+    
 }
 .myBurgers_photos_img{
     width: 200px;
@@ -340,7 +348,8 @@ article{
 .cta__button{
     width: 456px;
     height: 89px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    border: transparent; 
     
     background-color: var(--accent-color);
     color:var(--text-contacts-color);
@@ -354,10 +363,13 @@ article{
 }
 
 /* page 3 */
+
 .ourBurgers{
+    width: 90%;
     display: flex;
     justify-content:space-between;
-  border-bottom: 2px dashed var(--background-footer-color);
+    align-items: center;
+    border-bottom: 2px dashed var(--background-footer-color);
 
 }
 .ourBurgers__description{
@@ -374,16 +386,101 @@ article{
 .ourBurgers__clicAndCollect-title{
     margin-bottom: 5px;
 }
-.burger__img{
-    width: 205px;
-    height: 194px;
-
+.burgers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 2px dashed var(--background-footer-color);
 }
-.burger__img::before {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url(../img/Ellipse.svg);
-  } 
+.burger__input{
+    zoom: 2;
+}
+.burger__img{
+    width: 25%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.burger__title{
+    width: 25%;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+}
+.burger__img--positionBottom{
+   object-position: bottom;
+}
+.burger__img--position{
+    object-position: 20% 80%;  
+}
+.burger__text{
+    width: 30%;
+  
+}
+.cta__burgers{
+    background: none;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+/* page 5 */
+.drinks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+.drink{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    border-bottom: 2px dashed var(--background-footer-color);
+}
+
+.cta__drinks{
+    background: none;
+    text-align: center;
+   
+    padding-bottom: 60px; 
+}
+.drink__img{
+    width: 40%;
+}
+
+/* page 7 */
+.price{
+    font-size: 32px;
+    line-height: 38px;
+}
+.cta__price{
+    text-align: end;
+}
+.price--margin{
+    margin-bottom: 20px;
+}
+
+/* page 8 */
+.modification__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background: var(--background-color);
+    border-radius: 50%;
+    color:var(--background-footer-color);
+}
+.modification__icon{
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
+}
 
