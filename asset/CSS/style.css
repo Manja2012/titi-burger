@@ -484,3 +484,14 @@ article{
     fill:currentColor;
 }
 
+/* slider */
+body {
+    background-color: darkslateblue;
+  }
+  
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
