@@ -1,0 +1,16 @@
+.modification__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background: var(--background-color);
+    border-radius: 50%;
+    color:var(--background-footer-color);
+}
+.modification__icon{
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
+}

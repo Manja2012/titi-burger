@@ -8,32 +8,22 @@
     <meta name="description" content="Bienvenue sur notre site officiel. 
     Découvrez notre carte, notre aventure et trouvez votre restaurant 
     Titi Burger. Vous trouverez ici les meilleurs burgers">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Langar&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="asset/CSS/style.css">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 </head>
 <body>
-    <header class="flex">
+    <header class="flex header">
         <div class="logo">
             <a href="./index.html">
-                <img src="./asset/img/logo burger dark.svg" alt="logo burger">
+                <img src="./images/logo burger dark.svg" alt="logo burger">
             </a>
         </div>
         <div class="navigation">
@@ -62,16 +52,13 @@
             </nav>
         </div>
     </header>
-    <div id="app"></div>
-    <div id="names"></div>
-    <div id="burgers"></div>
     <main>
         <div class="container"> 
         <section class="titiStory">
             <h1 class="hidden">Titi Burger</h1>
             <div class="titiStory_resto">
                 <h2 class="titiStory_resto_title">Le Resto</h2>
-                <img class="titiStory_image" src="asset/img/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="super delicious burger">
+                <img class="titiStory_image" src="images/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="super delicious burger">
             </div>
             <div class="titiStory_story">
                 <h2 class="titiStory_story_title">Titi  Story</h2>
@@ -84,38 +71,36 @@
                 <h2>Nos Burgers</h2>
                 <p class="myBurgers_burgers_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum nisi temporibus autem illo enim sapiente optio sequi exercitationem perferendis fugiat voluptate, repudiandae, nobis et, est placeat tempora unde excepturi?</p>
             </div>
-            <ul class="slider">
-                <li><img height="200" class="myBurgers_photos_img" src="asset/img/burger_promo_1.jpg" alt="double burger"></li>
-                <li><img height="200" class="myBurgers_photos_img" src="asset/img/burger_promo_2.jpg" alt="menu burger avec coca"></li>
-                <li><img height="200" class="myBurgers_photos_img" src="asset/img/burger_promo_3.jpg" alt="burger au boeuf et laitue"></li>
-                <li><img height="200" class="myBurgers_photos_img" src="asset/img/Le Big Big.jpg" alt="burger au boeuf et laitue"></li>
-                <li><img height="200" class="myBurgers_photos_img" src="asset/img/dark-burger.jpg" alt="burger au boeuf et laitue"></li>
-            </ul> 
-                
-            <!-- <div class="myBurgers_photos">
-                
-                
-               
-            </div> -->
+            <div class="slideshow">
+                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
+                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
+                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
+                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
+                <img class="myBurgers_photos_img" src="images/hamburger-gourmet.jpg" alt="menu burger avec coca">
+                <img class="myBurgers_photos_img" src="images/hamburger-noir.jpg" alt="burger au boeuf et laitue">
+                <img class="myBurgers_photos_img" src="images/hamburger-poulet.jpg" alt="burger au boeuf et laitue">
+            </div> 
+
+         
         </section>
         <section class="actus">
             <h2>Actus</h2>
             <div class="actus_articles">
                 <article>
                     <h3>Article 1</h3>
-                    <img class="actus_articles_img" src="asset/img/burger_black.jpg" alt="burger noir">
+                    <img class="actus_articles_img" src="images/hamburger-noir.jpg" alt="burger noir">
                     <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
                 <article>
                     <h3>Article 2</h3>
-                    <img class="actus_articles_img" src="asset/img/chinh-le-duc-276670.jpg" alt="boisson aux de litchi">
+                    <img class="actus_articles_img" src="images/chinh-le-duc-276670.jpg" alt="boisson aux de litchi">
                     <p class="actus_articles_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
                 <article>
                     <h3>Article 3</h3>
-                    <img class="actus_articles_img" src="asset/img/open.jpg" alt="open">
+                    <img class="actus_articles_img" src="images/open.jpg" alt="open">
                     <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
                     <a class="actus_articles_link" href="">En savoir +</a>
                 </article>
@@ -156,7 +141,7 @@
             </div>
             <div class="footer_list footer_flex">
                <span class="footer_list__text">Où nous trouver ?</span> 
-               <img class="footer_list__image" src="./asset/img/Rectangle.jpg" alt=" carte">
+               <div id="map"></div>
             </div>
             <div class="footer_list">
                 <ul>
@@ -170,7 +155,7 @@
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-facebook">
+                                <use href="./images/icons.svg#icon-facebook">
                                 </use>
                             </svg>
                         </a>
@@ -178,7 +163,7 @@
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-instagram">
+                                <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
                         </a>
@@ -186,7 +171,7 @@
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-tiktok">
+                                <use href="./images/icons.svg#icon-tiktok">
                                 </use>
                             </svg>
                         </a>
@@ -198,19 +183,15 @@
     
     <script
       type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeRnemxCI74BFR79V4AG0pCjj4p4Kcdk&callback=initMap&v=weekly"
+    defer
+  ></script>
     
 </body>
 </html>

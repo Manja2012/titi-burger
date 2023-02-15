@@ -1,0 +1,64 @@
+.ourBurgers{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 2px dashed var(--background-footer-color);
+
+}
+.ourBurgers__description{
+    width: 40%;
+}
+.ourBurgers__clicAndCollect{
+    width: 40%;
+    text-align: center;
+}
+.ourBurgers__clicAndCollect-text{
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+.ourBurgers__clicAndCollect-title{
+    margin-bottom: 5px;
+}
+.burgers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 2px dashed var(--background-footer-color);
+}
+.burger__input{
+    zoom: 2;
+}
+.burger__img{
+    width: 25%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.burger__title{
+    width: 25%;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+}
+.burger__img--positionBottom{
+   object-position: bottom;
+}
+.burger__img--position{
+    object-position: 20% 80%;  
+}
+.burger__text{
+    width: 30%;
+  
+}
+.cta__burgers{
+    background: none;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 60px;
+}

@@ -1,0 +1,239 @@
+.header{
+    padding-top: 30px;
+    height: 80vh;
+    justify-content: space-between;
+    background: url(../images/clem-onojeghuo-175917.jpg) no-repeat;
+    background-size: cover;
+    background-position: top ;
+}
+.logo img{
+    width: 40%;
+}
+.logo{
+    padding-left: 28px;
+    width: 25%;
+}
+.button{
+    text-align: right;
+    padding-right: 28px;
+    
+}
+.callToAction{
+    padding: 10px;
+    background-color: var(--accent-color);
+
+    margin-left: 16px;
+    color: var(--text-contacts-color);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Langar', cursive;
+}
+.navigation{
+    width: 40%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+
+}
+nav a{
+    color: var(--text-contacts-color);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Langar', cursive;
+}
+nav a:hover{
+color: darkgray;
+}
+
+
+
+.titiStory{
+    display: flex;  
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.titiStory_resto{
+   
+    width: 50%;
+}
+.titiStory_story{
+    width: 50%;
+}
+.titiStory_resto_title{
+    margin-bottom: 38px;
+}
+.titiStory_story_title{
+    margin-bottom: 16px;
+}
+.titiStory_story_text{
+    width: 70%;
+}
+.titiStory_story_description{
+    margin-bottom: 64px;
+}
+.titiStory_image{
+   width: 70%;
+}
+
+.myBurgers{
+    margin: 0 auto;
+    display: flex;  
+    justify-content: space-around;
+}
+.myBurgers_burgers{
+    width:50%; 
+}
+.myBurgers_burgers_text{
+    width: 70%;
+}
+.myBurgers_photos{
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+.myBurgers_photos_img{
+    height: 190px;
+    margin-right: 20px;
+}
+
+.actus{
+    text-align: center;
+    
+}  
+article{
+    width: 380px;
+}
+.actus_articles{
+    display: flex;
+    justify-content: space-between;
+}
+.actus_articles_img{
+    width: 380px;
+    height: 350px;
+    margin-top: 24px;
+}
+.actus_articles_link{
+    margin-top: 12px;
+    text-decoration: none;
+    background-color: #5F6368;
+    margin-left: 16px;
+    color: var(--text-contacts-color);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+  
+    font-family: 'Langar', cursive;
+    padding: 4px;
+}
+.actus_articles_text{
+    margin-top: 20px;
+    margin-bottom:40px ;
+}
+.cta{
+    background: #D9D9D9;
+
+    padding: 40px;
+    
+}
+.cta__background{
+    background-color: var(--background-footer-color);
+    display: flex;  
+    justify-content: space-between;
+    padding: 30px;
+  
+}
+.cta_title_text{
+    color:var(--text-contacts-color);
+    margin: 0;
+}
+.cta_form{
+    text-align: center;
+    width: 50%;
+
+   
+}
+.cta_title{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.cta_form_label{
+    margin-right: 56px;
+    color:var(--text-contacts-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-weight: 400;
+    font-family: 'Langar', cursive;
+}
+.cta_form_input{
+   width: 60%;
+   height: 30px;
+   margin-top: 12px;
+}
+.footer{
+    background: #3C4043;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    padding: 30px;
+    margin: 0 auto;
+    
+   
+}
+.footer_list{
+   
+    color: var(--text-contacts-color);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+  
+    font-family: 'Langar', cursive;
+}
+.footer_flex{
+   display: flex;
+   flex-direction: column;
+}
+.footer_list__text{
+    margin-bottom: 12px;
+}
+.footer_list__image{
+    width: 250px;
+    height: 130px;
+}
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.social__icon{
+    fill: var(--text-contacts-color);
+    background-color: var(--background-footer-color)
+}
+#map {
+    height: 400px; 
+    width: 100%;
+  }
+  

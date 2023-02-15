@@ -1,0 +1,38 @@
+.header__clicAndCollect{
+    background: none;
+    height: auto;
+}
+.cta__link{
+   margin: 0 auto;
+}
+.main__clicAndCollect{
+    text-align: center;
+}
+.main__clicAndCollect__caption{
+    color: var(--accent-color);
+}
+.main__clicAndCollect-title{
+    margin-top: 100px;
+    margin-bottom: 21px;
+}
+.main__clicAndCollect-text{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cta__button{
+    width: 456px;
+    height: 89px;
+    margin: 0 auto;
+    border: transparent; 
+    
+    background-color: var(--accent-color);
+    color:var(--text-contacts-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    font-weight: 400;
+    font-family: 'Langar', cursive;
+}

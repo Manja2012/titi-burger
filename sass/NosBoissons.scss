@@ -1,0 +1,24 @@
+.drinks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+.drink{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    border-bottom: 2px dashed var(--background-footer-color);
+}
+
+.cta__drinks{
+    background: none;
+    text-align: center;
+   
+    padding-bottom: 60px; 
+}
+.drink__img{
+    width: 40%;
+}

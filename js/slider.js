@@ -1,3 +1,5 @@
-$('.slider').slick({
-    slidesToShow: 3
+$('.slideshow').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
 });
