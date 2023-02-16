@@ -17,21 +17,65 @@
 
 
 </head>
-
-</head>
 <body>
     <header class="flex header">
         <div class="logo">
             <a href="./index.html">
-                <img src="./images/logo burger dark.svg" alt="logo burger">
+                <img class="logo_img" src="images/logo burger dark.svg" alt="logo burger">
             </a>
         </div>
-        <div class="navigation">
-            <div class="button">
+        <div class="button-mobil">
                 <a class="callToAction" href="./ClicAndCollect.html">Click & Collect</a>
                 <a class="callToAction" href="">Livraison</a>
-            </div>
+        </div>
+        <div class="mobil-menu" id="mobil-menu" data-menu>
+            <ul class="mobil-menu__nav">
+                 <li class="mobil-menu__item" >
+                   <a class="mobil-menu__link mobil-menu__link--current "  href="./index.html">La Carte</a>
+                  </li>
+                 <li class="mobil-menu__item">
+                   <a class="mobil-menu__link " href="./portfolio.html">Titi Stori</a>
+                 </li>
+                 <li class="mobil-menu__item">
+                   <a class="mobil-menu__link" href="#">Le resto</a>
+                 </li>
+                 <li class="mobil-menu__item">
+                    <a class="mobil-menu__link" href="#">Actus</a>
+                  </li>
+                  <li class="mobil-menu__item">
+                    <a class="mobil-menu__link" href="#">Réserver</a>
+                  </li>
+             
+            <ul class="mobil-social">
+                 <li class="mobil-social__item">
+                   <a class="mobil-social__link">Instagram</a>
+                 </li>
+                 <li class="mobil-social__item">
+                   <a class="mobil-social__link">Facebook</a>
+                 </li>
+                 <li class="mobil-social__item">
+                   <a class="mobil-social__link">TikTok</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="mobil-header">
+             <button class="menu-button" 
+             type="button" 
+             aria-expanded="false" 
+             aria-controls="mobil-menu"
+             data-menu-button>
+               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                   <use class="menu-button__icon-close" href="./images/icos.svg#icon-close_40px"></use>
+                   <use class="menu-button__icon-menu" href="./images/icos.svg#icon-menu"></use>
+               </svg>
+               </button>
+        </div>
+        <div class="navigation">
             <nav>
+                <div class="button">
+                    <a class="callToAction" href="./ClicAndCollect.html">Click & Collect</a>
+                    <a class="callToAction" href="">Livraison</a>
+                </div>
                 <ul>
                     <li class="navigation_list">
                         <a href="">La Carte</a>
@@ -54,61 +98,60 @@
     </header>
     <main>
         <div class="container"> 
-        <section class="titiStory">
-            <h1 class="hidden">Titi Burger</h1>
-            <div class="titiStory_resto">
-                <h2 class="titiStory_resto_title">Le Resto</h2>
-                <img class="titiStory_image" src="images/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="super delicious burger">
-            </div>
-            <div class="titiStory_story">
-                <h2 class="titiStory_story_title">Titi  Story</h2>
-                <h3 class="titiStory_story_description">Une équipe Authentique</h3>
-                <p class="titiStory_story_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet! Quam impedit provident beatae, aspernatur obcaecati doloribus veniam ducimus deleniti, nostrum sint cum labore quisquam nemo exercitationem mollitia aut sit.</p>
-            </div>
-        </section>
-        <section class="myBurgers">
-            <div class="myBurgers_burgers">
-                <h2>Nos Burgers</h2>
-                <p class="myBurgers_burgers_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum nisi temporibus autem illo enim sapiente optio sequi exercitationem perferendis fugiat voluptate, repudiandae, nobis et, est placeat tempora unde excepturi?</p>
-            </div>
-            <div class="slideshow">
-                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
-                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
-                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
-                <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
-                <img class="myBurgers_photos_img" src="images/hamburger-gourmet.jpg" alt="menu burger avec coca">
-                <img class="myBurgers_photos_img" src="images/hamburger-noir.jpg" alt="burger au boeuf et laitue">
-                <img class="myBurgers_photos_img" src="images/hamburger-poulet.jpg" alt="burger au boeuf et laitue">
-            </div> 
+            <section class="titiStory">
+                <h1 class="hidden">Titi Burger</h1>
+                <div class="titiStory_resto">
+                    <h2 class="titiStory_resto_title">Le Resto</h2>
+                    <img class="titiStory_image" src="images/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="super delicious burger">
+                </div>
+                <div class="titiStory_story">
+                    <h2 class="titiStory_story_title">Titi  Story</h2>
+                    <h3 class="titiStory_story_description">Une équipe Authentique</h3>
+                    <p class="titiStory_story_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet! Quam impedit provident beatae, aspernatur obcaecati doloribus veniam ducimus deleniti, nostrum sint cum labore quisquam nemo exercitationem mollitia aut sit.</p>
+                </div>
+            </section>
+            <section class="myBurgers">
+                <div class="myBurgers_burgers">
+                    <h2 class="myBurgers_burgers_title">Nos Burgers</h2>
+                    <p class="myBurgers_burgers_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum nisi temporibus autem illo enim sapiente optio sequi exercitationem perferendis fugiat voluptate, repudiandae, nobis et, est placeat tempora unde excepturi?</p>
+                </div>
+                <div class="myBurgers_diapo">
+                    <div class="slideshow">
+                        <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
+                        <img class="myBurgers_photos_img" src="images/hamburger-gourmet.jpg" alt="menu burger avec coca">
+                        <img class="myBurgers_photos_img" src="images/hamburger-noir.jpg" alt="burger au boeuf et laitue">
+                        <img class="myBurgers_photos_img" src="images/hamburger-poulet.jpg" alt="burger au boeuf et laitue">
+                    </div>
+                </div> 
 
-         
-        </section>
-        <section class="actus">
-            <h2>Actus</h2>
-            <div class="actus_articles">
-                <article>
-                    <h3>Article 1</h3>
-                    <img class="actus_articles_img" src="images/hamburger-noir.jpg" alt="burger noir">
-                    <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
-                    <a class="actus_articles_link" href="">En savoir +</a>
-                </article>
-                <article>
-                    <h3>Article 2</h3>
-                    <img class="actus_articles_img" src="images/chinh-le-duc-276670.jpg" alt="boisson aux de litchi">
-                    <p class="actus_articles_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
-                    <a class="actus_articles_link" href="">En savoir +</a>
-                </article>
-                <article>
-                    <h3>Article 3</h3>
-                    <img class="actus_articles_img" src="images/open.jpg" alt="open">
-                    <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
-                    <a class="actus_articles_link" href="">En savoir +</a>
-                </article>
-            </div>
+            
+            </section>
+            <section class="actus actus__no-padding-top">
+                <h2>Actus</h2>
+                <div class="actus_articles">
+                    <article>
+                        <h3 class="actus_articles__title">Article 1</h3>
+                        <img class="actus_articles_img" src="images/hamburger-noir.jpg" alt="burger noir">
+                        <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
+                        <a class="actus_articles_link" href="">En savoir +</a>
+                    </article>
+                    <article>
+                        <h3 class="actus_articles__title">Article 2</h3>
+                        <img class="actus_articles_img" src="images/litchi.jpg" alt="boisson aux de litchi">
+                        <p class="actus_articles_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
+                        <a class="actus_articles_link" href="">En savoir +</a>
+                    </article>
+                    <article>
+                        <h3 class="actus_articles__title">Article 3</h3>
+                        <img class="actus_articles_img" src="images/open.jpg" alt="open">
+                        <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
+                        <a class="actus_articles_link" href="">En savoir +</a>
+                    </article>
+                </div>
+            </section>
         </div>
-        </section>
         <section class="cta">
-            <div class="cta__background">
+            <div class="cta_background">
                 <div class="cta_title">
                     <p class="cta_title_text">Des Offres et des actus <br>
                     Chaque semaine sur titi Burger</p>
@@ -125,14 +168,14 @@
         <section class="footer">
             <div class="footer_list">
                 <ul>
-                    <li>Mention Légales</li>
+                    <li class="footer_list__title">Mention Légales</li>
                     <li>CGU</li>
                     <li>CGV</li>
                 </ul>
             </div>
             <div class="footer_list">
                 <ul>
-                    <li>Plan du Site</li>
+                    <li class="footer_list__title">Plan du Site</li>
                     <li>La Carte</li>
                     <li>Titi Story</li>
                     <li>Le resto</li>
@@ -140,7 +183,7 @@
                 </ul>
             </div>
             <div class="footer_list footer_flex">
-               <span class="footer_list__text">Où nous trouver ?</span> 
+               <span class="footer_list__text footer_list__title">Où nous trouver ?</span> 
                <div id="map"></div>
             </div>
             <div class="footer_list">
@@ -154,7 +197,7 @@
                 <ul class="social">
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
+                            <svg width="40" height="40" class="social__icon">
                                 <use href="./images/icons.svg#icon-facebook">
                                 </use>
                             </svg>
@@ -162,7 +205,7 @@
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
+                            <svg width="40" height="40" class="social__icon">
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
@@ -170,7 +213,7 @@
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
+                            <svg width="40" height="40" class="social__icon">
                                 <use href="./images/icons.svg#icon-tiktok">
                                 </use>
                             </svg>
@@ -188,6 +231,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeRnemxCI74BFR79V4AG0pCjj4p4Kcdk&callback=initMap&v=weekly"
     defer

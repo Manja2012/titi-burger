@@ -11,6 +11,11 @@
     justify-content: space-around;
     padding: 50px;
     border-bottom: 2px dashed var(--background-footer-color);
+
+    &__img{
+    width: 40%;
+    height: 200px;
+    }
 }
 
 .cta__drinks{
@@ -18,7 +23,4 @@
     text-align: center;
    
     padding-bottom: 60px; 
-}
-.drink__img{
-    width: 40%;
 }

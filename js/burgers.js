@@ -3,7 +3,7 @@ fetch('https://titi.startwin.fr/products/type/burger').then(function (response) 
 }).then(function (data) {
     const div = document.getElementById('burgers');
     console.log(data) 
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < data.length; i++){
 
 
       // data.forEach(function (element, index) {
@@ -11,10 +11,10 @@ fetch('https://titi.startwin.fr/products/type/burger').then(function (response) 
       //     console.log(index);
       div.innerHTML += `
       <div class="burgers">
-              <input class="burger__input" type="radio">
+              <input class="burger__input" type="radio" name="burger" value="${i}">
               <img class="burger__img burger__img--position" src="${data[i].image}" alt="${data[i].name}">
               <h2 class="burger__title">${data[i].name}</h2>
-              <p class="burger__text">${data[i].name}</p>
+              <p class="burger__text">${data[i].description}</p>
           </div>
       `
     }

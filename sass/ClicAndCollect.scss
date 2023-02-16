@@ -1,27 +1,41 @@
 .header__clicAndCollect{
     background: none;
     height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    
+    @media screen and (min-width:768px){
+       padding-right: 120px; 
+    }
+}
+.button-mobil__cta{
+    margin-top: 50px;
 }
 .cta__link{
    margin: 0 auto;
 }
-.main__clicAndCollect{
+.main-clicAndCollect{
     text-align: center;
-}
-.main__clicAndCollect__caption{
+
+    &_caption{
     color: var(--accent-color);
-}
-.main__clicAndCollect-title{
+    }
+
+    &_title{
     margin-top: 100px;
     margin-bottom: 21px;
-}
-.main__clicAndCollect-text{
+    }
+
+    &_text{
     width: 50%;
     margin: 0 auto;
+    }
 }
 
 .cta__button{
-    width: 456px;
+    width: 40%;
     height: 89px;
     margin: 0 auto;
     border: transparent; 
@@ -35,4 +49,7 @@
 
     font-weight: 400;
     font-family: 'Langar', cursive;
+}
+.cta__background__clicAndCollect{
+    text-align: center;
 }

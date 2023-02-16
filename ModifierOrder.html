@@ -17,7 +17,7 @@
     <header class="container flex header__clicAndCollect">
         <div class="logo">
             <a href="./index.html">
-                <img src="./asset/img/logo burger dark.svg" alt="logo burger">
+                <img src="images/logo burger dark.svg" alt="logo burger">
             </a>
         </div>
         <div class="navigation">
@@ -41,7 +41,7 @@
                 <h1 class="hidden">Nos Desserts</h1>
                     <div class="burgers">
                         <input class="burger__input" type="radio">
-                        <img class="burger__img" src="./asset/img/dark-burger.jpg" alt="Le Dark Burger">
+                        <img class="burger__img" src="images/hamburger-noir.jpg" alt="Le Dark Burger">
                         <h2 class="burger__title">Le Dark Burger</h2>
                         <div>
                             <span class="modification">Modifier</span>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="burgers">
                         <input class="burger__input" type="radio">
-                        <img class="burger__img" src="./asset/img/Frites-de-Patate-Douce.jpg" alt="Frites de Patates Douces">
+                        <img class="burger__img" src="images/frites-patate-douce.jpg" alt="Frites de Patates Douces">
                         <h2 class="burger__title">Frites de Patates Douces</h2>
                         <div>
                             <span class="modification">Modifier</span>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="burgers">
                         <input class="burger__input" type="radio">
-                        <img class="burger__img" src="./asset/img/Jus de Citron.jpg" alt="Limonade">
+                        <img class="burger__img" src="images/limonade.jpg" alt="Limonade">
                         <h2 class="burger__title">Limonade</h2>
                         <div>
                             <span class="modification">Modifier</span>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="burgers">
                         <input class="burger__input" type="radio">
-                        <img class="burger__img" src="./asset/img/Muffins.jpg" alt="Muffin">
+                        <img class="burger__img" src="images/muffin.jpg" alt="Muffin">
                         <h2 class="burger__title">Muffin</h2>
                         <div>
                             <span class="modification">Modifier</span>
@@ -112,14 +112,14 @@
         <section class="footer">
             <div class="footer_list">
                 <ul>
-                    <li>Mention Légales</li>
+                    <li class="footer_list__title">Mention Légales</li>
                     <li>CGU</li>
                     <li>CGV</li>
                 </ul>
             </div>
             <div class="footer_list">
                 <ul>
-                    <li>Plan du Site</li>
+                    <li class="footer_list__title">Plan du Site</li>
                     <li>La Carte</li>
                     <li>Titi Story</li>
                     <li>Le resto</li>
@@ -127,8 +127,8 @@
                 </ul>
             </div>
             <div class="footer_list footer_flex">
-               <span class="footer_list__text">Où nous trouver ?</span> 
-               <img class="footer_list__image" src="./asset/img/Rectangle.jpg" alt=" carte">
+               <span class="footer_list__text footer_list__title">Où nous trouver ?</span> 
+               <div id="map"></div>
             </div>
             <div class="footer_list">
                 <ul>
@@ -141,24 +141,24 @@
                 <ul class="social">
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-facebook">
+                            <svg width="40" height="40" class="social__icon">
+                                <use href="./images/icons.svg#icon-facebook">
                                 </use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-instagram">
+                            <svg width="40" height="40" class="social__icon">
+                                <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link">
-                            <svg width="48" height="48" class="social__icon">
-                                <use href="./asset/img/icons.svg#icon-tiktok">
+                            <svg width="40" height="40" class="social__icon">
+                                <use href="./images/icons.svg#icon-tiktok">
                                 </use>
                             </svg>
                         </a>
@@ -167,5 +167,10 @@
             </div>
         </section>
     </footer>
+    <script src="./js/index.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeRnemxCI74BFR79V4AG0pCjj4p4Kcdk&callback=initMap&v=weekly"
+    defer
+  ></script>
 </body>
 </html>
