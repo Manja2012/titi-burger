@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AWYIF76W1ToMO8jzvEAArqYAQceS7Jr4dMx0bPlX0wiV0sN0qYjtCBne592v41M7CZCwwZ8ExOaskUt-&currency=EUR&locale=fr_FR"></script>
 </head>
 <body>
-    <header class="flex header">
+    <header class="flex header header--noBg">
         <div class="logo">
             <a href="index.html">
                 <img class="logo_img" src="images/logo-burger-dark.svg" alt="logo burger">
@@ -63,8 +64,8 @@
              aria-controls="mobil-menu"
              data-menu-button>
                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                   <use class="menu-button__icon-close" href="images/icos.svg#icon-close_40px"></use>
-                   <use class="menu-button__icon-menu" href="images/icos.svg#icon-menu"></use>
+                   <use class="menu-button__icon-close icon-menu" href="images/icos.svg#icon-close_40px"></use>
+                   <use class="menu-button__icon-menu icon-menu" href="images/icos.svg#icon-menu"></use>
                </svg>
                </button>
         </div>
@@ -95,72 +96,31 @@
         </div>
     </header>
     <main>
-        <div class="container"> 
-            <section class="titiStory">
-                <h1 class="hidden">Titi Burger</h1>
-                <div class="titiStory_resto">
-                    <h2 class="titiStory_resto_title">Le Resto</h2>
-                    <img class="titiStory_image" src="images/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="super delicious burger">
+        <div class="container">
+            <div class="commande">
+                <div class="percent33">
+                    <p class="commande__text">commande TITI03FTP092201</p>
                 </div>
-                <div class="titiStory_story">
-                    <h2 class="titiStory_story_title">Titi  Story</h2>
-                    <h3 class="titiStory_story_description">Une équipe Authentique</h3>
-                    <p class="titiStory_story_text">for textfor textfor textfor textfor textfor textfor textfor textfor textfor textfor textfor textfor textfor textfor textvfor textfor textvfor textfor textfor textfor text </p>
+                <div class="percent66">
+                    <h2>Click & Collect</h2>
+                    <h3>commander et déguster</h3>
                 </div>
-            </section>
-            <section class="myBurgers">
-                <div class="myBurgers_burgers">
-                    <h2 class="myBurgers_burgers_title">Nos Burgers</h2>
-                    <p class="myBurgers_burgers_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum nisi temporibus autem illo enim sapiente optio sequi exercitationem perferendis fugiat voluptate, repudiandae, nobis et, est placeat tempora unde excepturi?</p>
-                </div>
-                <div class="myBurgers_diapo">
-                    <div class="slideshow">
-                        <img class="myBurgers_photos_img" src="images/hamburger-double.jpg" alt="double burger">
-                        <img class="myBurgers_photos_img" src="images/hamburger-gourmet.jpg" alt="menu burger avec coca">
-                        <img class="myBurgers_photos_img" src="images/hamburger-noir.jpg" alt="burger au boeuf et laitue">
-                        <img class="myBurgers_photos_img" src="images/hamburger-poulet.jpg" alt="burger au boeuf et laitue">
-                    </div>
-                </div> 
-
-            
-            </section>
-            <section class="actus actus__no-padding-top">
-                <h2>Actus</h2>
-                <div class="actus_articles">
-                    <article>
-                        <h3 class="actus_articles__title">Article 1</h3>
-                        <img class="actus_articles_img" src="images/hamburger-noir.jpg" alt="burger noir">
-                        <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum recusandae itaque corporis amet. Necessitatibus fugit facere cupiditate accusamus vero nobis. Cupiditate incidunt repellat, labore nulla minima libero ea ex.</p>
-                        <a class="actus_articles_link" href="">En savoir +</a>
-                    </article>
-                    <article>
-                        <h3 class="actus_articles__title">Article 2</h3>
-                        <img class="actus_articles_img" src="images/litchi.jpg" alt="boisson aux de litchi">
-                        <p class="actus_articles_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum earum debitis incidunt esse iusto repellat assumenda ea ipsum odio. Cupiditate inventore numquam nam eos in id hic sint magnam aspernatur.</p>
-                        <a class="actus_articles_link" href="">En savoir +</a>
-                    </article>
-                    <article>
-                        <h3 class="actus_articles__title">Article 3</h3>
-                        <img class="actus_articles_img" src="images/open.jpg" alt="open">
-                        <p class="actus_articles_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed vero nulla fugit quidem facilis sapiente pariatur animi maiores architecto est rem ea assumenda tempora dignissimos, iure vitae nostrum corporis?</p>
-                        <a class="actus_articles_link" href="">En savoir +</a>
-                    </article>
-                </div>
-            </section>
-        </div>
-        <section class="section cta">
-            <div class="cta_background">
-                <div class="cta_title">
-                    <p class="cta_title_text">Des Offres et des actus <br>
-                    Chaque semaine sur titi Burger</p>
-                </div>
-                <div class="cta_form">
-                    <p class="cta_title_text">Inscription à Newsletter</p>
-                    <label class="cta_form_label" for="inscription">c’est par ici </label>
-                    <input class="cta_form_input" type="text" id="inscription">
-                </div> 
             </div>
-        </section>
+            <div class="paiement">
+                <div class="commande" id="paiement">
+                    <form action="/action_page.php">
+                        <div class="choise-paiement">
+                            <p class="text-left">Paiement</p>
+                        </div>
+                        <div id="paypal-button-container"></div>
+                    </form>
+                    <div class="right-image">
+                        <p class="right-image__text">Promo pour votre prochaine commande</p>
+                        <img  src="./images/modele-banniere-medias-sociaux-delicieux-menu-burger-nourriture_106176-354.jpg" alt="promo burger">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="footer">
@@ -222,11 +182,38 @@
             </div>
         </section>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+
+  
     <script src="js/index.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeRnemxCI74BFR79V4AG0pCjj4p4Kcdk&callback=initMap&v=weekly" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script>
+    paypal.Buttons({
+      createOrder: (data, actions) => {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '150',
+              currency: "EUR"
+            }
+          }]
+        });
+      },
+      onApprove: (data, actions) => {
+        return actions.order.capture().then(function(orderData) {
+          console.log(orderData);
+          if (orderData.status == "COMPLETED") {
+            window.location.href = "/final.html";
+          }
+        });
+      }
+    }).render('#paypal-button-container');
+  </script>
+  
 </body>
 </html>

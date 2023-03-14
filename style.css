@@ -615,15 +615,6 @@ article {
   fill: currentColor;
 }
 
-.price--margin {
-  margin-bottom: 20px;
-}
-
-.price {
-  font-size: 32px;
-  line-height: 38px;
-}
-
 .menu-button {
   display: inline-flex;
   position: absolute;
@@ -771,162 +762,161 @@ article {
   margin-right: 20px;
 }
 
-.commande {
-  padding: 20px;
+main h3 {
+  font-weight: bold;
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .commande {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+
+.dashed-line {
+  width: 5px;
+  margin: 0 auto;
 }
-.commande__text {
+
+.percent33 {
+  margin: auto;
+  margin-left: 5px;
+}
+
+.percent33 p {
   color: black;
   background-color: rgb(210, 190, 190);
   padding: 20px 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.header--noBg {
-  background-image: none;
-  height: auto;
+.paiement {
+  margin-top: 1rem;
 }
 
-.percent33 {
+.main-grid {
   display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .percent33 {
-    max-width: calc(33% - 35px);
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.percent66 {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .percent66 {
-    display: flex;
-    flex-direction: column;
-    max-width: calc(66% - 35px);
-    width: 100%;
-  }
+#paiement {
+  margin-top: 50px;
 }
 
-.choise-paiement {
-  text-align: center;
-  margin-top: 70px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 60px;
-  padding: 20px;
-  border-top: dashed;
+.text-left {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
 }
 
 .right-image {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
+  width: 25%;
 }
-@media screen and (min-width: 768px) {
-  .right-image {
-    width: 25%;
-  }
-}
-.right-image__text {
+
+.right-image p {
   font-size: 1.8rem;
   margin-top: 1rem;
   color: black;
   border: 0.2rem solid black;
 }
+
 .right-image img {
   width: 90%;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
 
-.header__clicAndCollect {
-  background: none;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-}
-@media screen and (min-width: 768px) {
-  .header__clicAndCollect {
-    padding-right: 120px;
-  }
+form {
+  width: 70%;
 }
 
-.button-mobil__cta {
-  margin-top: 50px;
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding: 20px;
 }
 
-.cta__link {
-  margin: 0 auto;
-}
-
-.main-clicAndCollect {
-  text-align: center;
-}
-.main-clicAndCollect_caption {
-  color: var(--accent-color);
-}
-.main-clicAndCollect_title {
-  margin-top: 100px;
-  margin-bottom: 21px;
-}
-.main-clicAndCollect_text {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.cta__button {
-  width: 40%;
-  height: 89px;
-  margin: 0 auto;
-  border: transparent;
-  font-weight: 400;
-  font-family: "Langar", cursive;
-  background-color: var(--accent-color);
-  color: var(--text-contacts-color);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 400;
-}
-
-.cta__background__clicAndCollect {
-  text-align: center;
-}
-
-.icon-menu {
-  fill: var(--text-color);
+.text-left {
+  text-align: left;
 }
 
 .dashed {
   border-top: dashed;
+}
+
+.btn-form {
+  margin: 60px auto;
+  padding: 20px 125px;
+  font-size: 38px;
+}
+
+#card-element {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+main h3 {
+  font-weight: bold;
   text-align: center;
 }
 
-.clock {
+.dashed-line {
+  width: 5px;
+  margin: 0 auto;
+}
+
+.main-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.commande-faite p {
+  color: black;
+  text-align: center;
+  width: fit-content;
+  margin: 2em auto;
+  background-color: rgb(210, 196, 196);
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.percent33 p {
+  background-color: rgb(210, 196, 196);
+  text-align: center;
+  padding-top: 1rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.retirer-commande p {
+  color: black;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.clock p {
   color: black;
   font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin-top: 30px;
 }
 
-.commande__text--width {
-  display: inline-block;
-  width: 30%;
-  margin-top: 40px;
-  margin: o auto;
+form {
+  width: 100%;
+}
+
+.grid-3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.dashed {
+  border-top: dashed;
 }
 
 /*# sourceMappingURL=style.css.map */
